@@ -5,6 +5,8 @@ import Popular from './Pages/Popular';
 import About from './Pages/About';
 import Country from './Pages/Country';
 import Travel from './Pages/Travel';
+import Comments from './Pages/Comments';
+import Service from './Pages/Service';
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
       <About/>
       <Country/>
       <Travel/>
+      <Comments/>
+      <Service/>
     </div>
   )
 }

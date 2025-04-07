@@ -17,7 +17,7 @@ const Header = () => {
                 <a className='hover:text-red-600' href="about">Biz haqimizda</a>
               </li>
               <li>
-                <a className='hover:text-red-600' href="/countries">Mamlakatlar</a>
+                <a className='hover:text-red-600' href="/country">Mamlakatlar</a>
               </li>
               <li>
                 <a className='hover:text-red-600' href="/service">Xizmatlar</a>
