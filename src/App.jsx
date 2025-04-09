@@ -8,11 +8,13 @@ import Travel from './Pages/Travel';
 import Comments from './Pages/Comments';
 import Service from './Pages/Service';
 import Turizm from './Pages/Turizm';
+import OurTravels from './Pages/OurTravels';
+import Footer from './Components/Footer';
 
 const App = () => {
   return (
     <div>
-      <Header/>
+      {/* <Header/> */}
       <Home/>
       <Popular/>
       <About/>
@@ -21,6 +23,8 @@ const App = () => {
       <Comments/>
       <Turizm/>
       <Service/>
+      <OurTravels/>
+      <Footer/>
     </div>
   )
 }

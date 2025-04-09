@@ -9,7 +9,7 @@ const Service = () => {
   };
 
   return (
-    <section id='service' className='md:pt-[200px] lg:pt-[50px]'>
+    <section id='service' className='md:mt-[200px] lg:pt-[50px]'>
       <div className="container max-w-[1300px] mx-auto px-4">
         <div data-aos="fade-right">
           <h1 className="text-[32px] md:text-[44px] font-bold">Xizmatlar</h1>
