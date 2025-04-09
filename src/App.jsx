@@ -7,6 +7,7 @@ import Country from './Pages/Country';
 import Travel from './Pages/Travel';
 import Comments from './Pages/Comments';
 import Service from './Pages/Service';
+import Turizm from './Pages/Turizm';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Country/>
       <Travel/>
       <Comments/>
+      <Turizm/>
       <Service/>
     </div>
   )
