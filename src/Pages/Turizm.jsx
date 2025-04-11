@@ -8,8 +8,11 @@ import logo3 from '../assets/turizm3.svg';
 import logo4 from '../assets/turizm4.svg';
 import { numbers } from '../mock/numbers';
 import img from '../assets/numbers-bg.png';
+import { useTranslation } from 'react-i18next';
 
 const Turizm = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -25,7 +28,7 @@ const Turizm = () => {
       <div className="container max-w-[1300px] mx-auto px-4 pt-[80px] pb-[50px] h-[800px]">
         <div className="text-center" data-aos="fade-down">
           <h3 className="text-[32px] md:text-[40px] lg:text-[50px] font-bold text-white">
-            Turizm va Vizalarda Prioritetlar
+            {t('excursion.title')}
           </h3>
           <span className="bg-[#ff0000] w-[50px] h-[5px] block mx-auto my-[5px]"></span>
         </div>
@@ -33,30 +36,28 @@ const Turizm = () => {
           className="text-center text-white font-bold mt-4 text-[15px] md:text-[17px] leading-snug md:leading-tight px-2 md:px-20"
           data-aos="fade-up"
         >
-          Biz turist vizalarini rasmiylashtirishda yuqori darajada xizmat va ishonchlilikni ta'minlaymiz.
-          Bizning jamoa turizm sohasida tajribaga ega va vizalarni olish bilan bog'liq muammolarni tezda hal qilishga tayyor.
-          Biz mijozlarimizning sayohatlarini qulay va muammosiz qilish uchun har bir bosqichda—vizani tanlashdan tortib hujjatlarni olishgacha — qo'llab-quvvatlashni ta'minlaymiz.
+          {t('excursion.subtitle')}
         </p>
         <div className="flex lg:flex-wrap flex-col-1 justify-center md:justify-between mt-[60px] gap-2 lg:gap-10">
           <div className="text-center w-[135px]" data-aos="zoom-in">
             <img className="md:max-w-[135px] md:max-h-[135px] max-w-[55px] max-h-[55px] mx-auto" src={logo1} alt="Vaqtingizni Tejash" />
-            <h3 className="text-white text-[14px] md:text-[15px] font-bold mt-[20px] leading-tight">Vaqtingizni Tejash</h3>
+            <h3 className="text-white text-[14px] md:text-[15px] font-bold mt-[20px] leading-tight">{t('excursion.data1')}</h3>
           </div>
 
           <div className="text-center w-[135px]" data-aos="zoom-in" data-aos-delay="100">
             <img className="md:max-w-[135px] md:max-h-[135px] max-w-[55px] max-h-[55px] mx-auto" 
               src={turizm} alt="Ishinchlilik" />
-            <h3 className="text-white text-[14px] md:text-[15px] font-bold mt-[20px] leading-tight">Ishonchlilik</h3>
+            <h3 className="text-white text-[14px] md:text-[15px] font-bold mt-[20px] leading-tight">{t('excursion.data2')}</h3>
           </div>
 
           <div className="text-center w-[135px]" data-aos="zoom-in" data-aos-delay="200">
             <img className="md:max-w-[135px] md:max-h-[135px] max-w-[55px] max-h-[55px] mx-auto" src={logo3} alt="Qo'llab-quvvatlash" />
-            <h3 className="text-white text-[14px] md:text-[15px] font-bold mt-[20px] leading-tight">Qo'llab-quvvatlash</h3>
+            <h3 className="text-white text-[14px] md:text-[15px] font-bold mt-[20px] leading-tight">{t('excursion.data3')}</h3>
           </div>
 
           <div className="text-center w-[135px]" data-aos="zoom-in" data-aos-delay="300">
             <img className="md:max-w-[135px] md:max-h-[135px] max-w-[55px] max-h-[55px] mx-auto" src={logo4} alt="Qulaylik" />
-            <h3 className="text-white text-[14px] md:text-[15px] font-bold mt-[20px] leading-tight">Qulaylik</h3>
+            <h3 className="text-white text-[14px] md:text-[15px] font-bold mt-[20px] leading-tight">{t('excursion.data4')}</h3>
           </div>
         </div>
 
@@ -65,7 +66,7 @@ const Turizm = () => {
           <div className='mt-[15px] aos-init aos-animate'
             data-aos="fade-up">
             <h3 className='text-[30px] md:text-[50px] text-center font-bold md:mt-[50px] text-white'>
-              Biz raqamlarda
+              {t('excursion.numbers')}
             </h3>
             <span className='block w-[50px] h-[5px] bg-white mx-auto mt-[10px]'></span>
           </div>

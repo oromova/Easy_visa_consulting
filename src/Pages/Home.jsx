@@ -7,8 +7,11 @@ import { Pagination } from "swiper/modules";
 import slide1 from '../assets/home1.png';
 import slide2 from '../assets/home2.png';
 import slide3 from '../assets/home3.webp';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+  const { t } = useTranslation();
+
   return (
     <main>
       <Swiper
@@ -22,7 +25,7 @@ const Home = () => {
             <img className="w-full h-full object-cover" src={slide1} alt="slide1" />
             <div className="absolute inset-0 flex items-center justify-center px-4 text-center">
               <h1 className="bg-black px-[30px] sm:px-[40px] md:px-[50px] py-[15px] sm:py-[18px] md:py-[20px] rounded-[20px] text-white text-xl sm:text-2xl md:text-3xl lg:text-[40px] xl:text-[48px] font-bold uppercase leading-snug">
-                Sayohatingizdagi qulaylik - <br /> bizning mas'uliyatimizdir
+               {t('home.title')} <br /> {t('home.title1')}
               </h1>
             </div>
           </div>

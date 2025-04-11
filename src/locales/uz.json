@@ -1,0 +1,60 @@
+{
+  "header": {
+    "about": "Biz haqimizda",
+    "country": "Mamlakatlar",
+    "service": "Xizmatlar",
+    "work": "Ishlarimiz",
+    "contact": "Bog'lanish"
+  },
+  "home": {
+    "title": "Sayohatingizdagi qulaylik -",
+    "title1": "bizning mas'uliyatimizdir"
+  },
+  "popular": {
+    "title": "Ommabop"
+  },
+  "about": {
+    "title": "Biz haqimizda",
+    "subtitle": "EASY VISA CONSULTING – sayohatchilar uchun visa ko‘mak berishga ixtisoslashgan tez o‘sayotgan kompaniya. Biz sizning sayohatlaringizni qulay va bezovta qilmaydigan qilishga e'tibor qaratamiz.",
+    "subtitle2": "EASY VISA CONSULTING ta'til va biznes safarlari uchun Shengen, Kanada, AQSH, Buyuk Britaniya, Yaponiya va Koreyaga visa rasmiylashtirish xizmatlarini taqdim etadi. Tajribali mutaxassislardan iborat jamoamiz yuqori xizmat darajasini ta'minlaydi, shunda siz sayohat rejalaringizga e'tibor qaratishingiz mumkin.",
+    "subtitle3": "Biz O‘zbekistonlik mijozlar uchun visa olish jarayonini oddiy va tushunarli qilishga qaratilganmiz, shunda ularga dunyoning eng yaxshi sayohat manzillariga oson va tez kirish imkonini beramiz."
+  },
+  "city": {
+    "title": "Mamlakatlar",
+    "city1": ""
+  },
+  "travel": "Sayohat",
+  "comment": "Mijozlar Sharhlari",
+  "excursion": {
+    "title": "Turizm va Vizalarda Prioritetlar",
+    "subtitle": "Biz turist vizalarini rasmiylashtirishda yuqori darajada xizmat va ishonchlilikni ta'minlaymiz. Bizning jamoa turizm sohasida tajribaga ega va vizalarni olish bilan bog'liq muammolarni tezda hal qilishga tayyor. Biz mijozlarimizning sayohatlarini qulay va muammosiz qilish uchun har bir bosqichda—vizani tanlashdan tortib hujjatlarni olishgacha—qo'llab-quvvatlashni ta'minlaymiz.",
+    "data1": "Vaqtingizni Tejash",
+    "data2": "Ishonchlilik",
+    "data3": "Qo'llab-quvvatlash",
+    "data4": "Qulaylik",
+    "numbers": "Biz raqamlarda"
+  },
+  "service": {
+    "title": "Xizmatlar"
+  },
+  "travels": "Sayohat",
+  "contact": {
+    "title": "Контакты",
+    "subtitle": "Для связи:",
+    "subtitle2": "Социальные сети",
+    "telegram": "Телеграм",
+    "location": "Toshkent, Mustaqillik ko'chasi, 59"
+  },
+  "submit": {
+    "title": "Ariza yuborish",
+    "name": "Ism",
+    "surname": "Familiya",
+    "phone": "Telefon",
+    "comment": "Izohlar",
+    "submit": "Ariza yuborish"
+  },
+  "footer": {
+    "title": "© EASY VISA CONSULTING - HAMMA HUQUQLARI HIMOYA QILINGAN",
+    "subtitle": "Limsa tomonidan ishlab chiqilgan"
+  }
+}

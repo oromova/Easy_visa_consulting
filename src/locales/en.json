@@ -1,0 +1,60 @@
+{
+  "header": {
+    "about": "About",
+    "country": "Countries",
+    "service": "Services",
+    "work": "Our Works",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Your comfort in travel -",
+    "title1": "is our concern"
+  },
+  "popular": {
+    "title": "Populars"
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "EASY VISA CONSULTING is a rapidly growing company specializing in visa support for travelers. We ensure that your trips are comfortable and worry-free.",
+    "subtitle2": " EASY VISA CONSULTING provides visa services for leisure and business trips to the Schengen Area, Canada, the USA, the UK, Japan, and Korea. Our team of experienced professionals ensures a high level of service, allowing you to focus on your travel plans.",
+    "subtitle3": " We are committed to making the visa application process simple and understandable for clients from Uzbekistan, enabling them to easily and quickly access the best travel destinations in the world."
+  },
+  "city": {
+    "title": "Countries",
+    "city1": ""
+  },
+  "travel": "Excursion",
+  "comment": "Client Reviews",
+  "excursion": {
+    "title": "Priorities in Tourism and Visas",
+    "subtitle": "We provide a high level of service and reliability in obtaining tourist visas. Our team has experience in the tourism industry and is ready to quickly resolve issues related to obtaining visas. We strive to make our clients' travels comfortable and carefree, providing support at every stage—from choosing a visa to obtaining documentation.",
+    "data1": "Saving Your Time",
+    "data2": "Reliability",
+    "data3": "Support",
+    "data4": "Convenience",
+    "numbers": "We in Numbers"
+  },
+  "service": {
+    "title": "Services"
+  },
+  "travels": "Travels",
+  "contact": {
+    "title": "Contact",
+    "subtitle": "For contact:",
+    "subtitle2": "Social media",
+    "telegram": "Telegram",
+    "location": "г.Ташкент, Мустакиллик 59."
+  },
+  "submit": {
+    "title": "Submit a request",
+    "name": "Name",
+    "surname": "Surname",
+    "phone": "telephone",
+    "comment": "Comments",
+    "submit": "Submit a request"
+  },
+  "footer": {
+    "title": "© EASY VISA CONSULTING - ALL RIGHTS RESERVED",
+    "subtitle": "Developed by Limsa"
+  }
+}

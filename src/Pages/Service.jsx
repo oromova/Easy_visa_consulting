@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { service } from '../mock/service';
+import { useTranslation } from 'react-i18next';
 
 const Service = () => {
   const [activeId, setActiveId] = useState(service[0]?.id);
+  const { t } = useTranslation();
 
   const handleClick = (id) => {
     setActiveId(activeId === id ? '' : id);
@@ -12,7 +14,7 @@ const Service = () => {
     <section id='service' className='md:mt-[200px] lg:pt-[50px]'>
       <div className="container max-w-[1300px] mx-auto px-4">
         <div data-aos="fade-right">
-          <h1 className="text-[32px] md:text-[44px] font-bold">Xizmatlar</h1>
+          <h1 className="text-[32px] md:text-[44px] font-bold">{t('service.title')}</h1>
           <div className="w-[50px] h-[5px] bg-[#ff0000] mb-[20px]"></div>
         </div>
 

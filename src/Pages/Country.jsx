@@ -2,8 +2,11 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { countries } from '../mock/countries';
+import { useTranslation } from 'react-i18next';
 
 const Country = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -15,8 +18,8 @@ const Country = () => {
     <section id="country" className="pt-10">
       <div className="container max-w-[1300px] px-4 mx-auto mb-16">
         <div data-aos="fade-right">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-8 text-center sm:text-left">
-            Mamlakatlar
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-8 text-center sm:text-left">
+          {t('city.title')}
           </h1>
           <div className="w-[40px] sm:w-[50px] h-[4px] bg-[#ff0000] mb-6 mt-2 mx-auto sm:mx-0"></div>
         </div>

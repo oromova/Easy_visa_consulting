@@ -11,12 +11,17 @@ import img4 from '../assets/popular4.jpg';
 import img5 from '../assets/popular5.jpg';
 import img6 from '../assets/popular6.jpg';
 import img7 from '../assets/popular7.jpg';
+import { useTranslation } from 'react-i18next';
 
 const Popular = () => {
+  const { t } = useTranslation();
+  
   return (
     <section id="popular">
       <div className="container max-w-[1300px] mx-auto px-4 mb-[100px]">
-        <h1 className="text-[32px] md:text-[40px] font-bold mt-[50px]">Ommabop</h1>
+        <h1 className="text-[32px] md:text-[40px] font-bold mt-[50px]">
+          {t('popular.title')}
+        </h1>
         <div className="w-[50px] h-[5px] bg-[#ff0000] mb-[20px]"></div>
 
         <Swiper

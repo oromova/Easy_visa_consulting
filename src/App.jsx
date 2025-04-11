@@ -11,10 +11,11 @@ import Turizm from './Pages/Turizm';
 import OurTravels from './Pages/OurTravels';
 import Footer from './Components/Footer';
 
+
 const App = () => {
   return (
     <div>
-      {/* <Header/> */}
+      <Header/>
       <Home/>
       <Popular/>
       <About/>

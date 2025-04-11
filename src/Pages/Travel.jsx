@@ -1,12 +1,15 @@
 import React from 'react';
 import { travels } from '../mock/sayohat';
+import { useTranslation } from 'react-i18next';
 
 const Travel = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="travel">
       <div className="container max-w-[1300px] mx-auto px-4">
         <div data-aos="fade-right">
-          <h1 className="text-[32px] md:text-[44px] font-bold">Sayohat</h1>
+          <h1 className="text-[32px] md:text-[44px] font-bold">{t('travel')}</h1>
           <div className="w-[50px] h-[5px] bg-[#ff0000] mb-[20px]"></div>
         </div>
         <div className="p-4 grid grid-cols-1 md:grid-cols-3 w-full ">

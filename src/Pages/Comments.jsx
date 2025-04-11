@@ -1,12 +1,15 @@
 import React from 'react'
 import { comments } from '../mock/comment';
+import { useTranslation } from 'react-i18next';
 
 const Comments = () => {
+  const { t } = useTranslation();
+  
   return (
     <section id='comment' className='my-[50px]'>
       <div className='container max-w-[1300px] mx-auto px-4 '>
         <div data-aos="fade-right">
-          <h1 className="text-[32px] md:text-[44px] font-bold">Mijozlar sharhlari</h1>
+          <h1 className="text-[32px] md:text-[44px] font-bold">{t('comment')}</h1>
           <div className="w-[50px] h-[5px] bg-[#ff0000] mb-[20px]"></div>
         </div>
 

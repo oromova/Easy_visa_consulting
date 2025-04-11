@@ -1,8 +1,14 @@
 import React from 'react';
 import logo from '../assets/logo.png';
 import navBg from '../assets/navbar-bg.png';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
+
   return (
     <header>
       <div className='bg-white shadow-md' >
@@ -14,21 +20,27 @@ const Header = () => {
             </a>
             <ul className='items-center flex uppercase font-bold text-[14px] gap-8 ml-auto mr-[30px]'>
               <li>
-                <a className='hover:text-red-600' href="about">Biz haqimizda</a>
+                <a className='hover:text-red-600' href="about">{t('header.about')}</a>
               </li>
               <li>
-                <a className='hover:text-red-600' href="/country">Mamlakatlar</a>
+                <a className='hover:text-red-600' href="/country">{t('header.country')}</a>
               </li>
               <li>
-                <a className='hover:text-red-600' href="/service">Xizmatlar</a>
+                <a className='hover:text-red-600' href="/service">{t('header.service')}</a>
               </li>
               <li>
-                <a className='hover:text-red-600' href="work">Ishlarimiz</a>
+                <a className='hover:text-red-600' href="/work">{t('header.work')}</a>
               </li>
               <li>
-                <a className='hover:text-red-600' href="/contact">Aloqa</a>
+                <a className='hover:text-red-600' href="/contact">{t('header.contact')}</a>
               </li>
-              <select className='uppercase' name="lang" id="lang">
+              <select
+                className='uppercase bg-black text-white p-1'
+                name="lang"
+                id="lang"
+                onChange={(e) => changeLanguage(e?.target?.value)}
+                value={i18n.language}
+              >
                 <option className='uppercase' value="uz">Uz</option>
                 <option className='uppercase' value="ru">Ru</option>
                 <option className='uppercase' value="en">En</option>
