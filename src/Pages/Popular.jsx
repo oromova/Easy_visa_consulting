@@ -16,6 +16,18 @@ import { useTranslation } from 'react-i18next';
 const Popular = () => {
   const { t } = useTranslation();
 
+  const titles = [
+    t('popular.city1'),
+    t('popular.city2'),
+    t('popular.city3'),
+    t('popular.city4'),
+    t('popular.city5'),
+    t('popular.city6'),
+    t('popular.city7'),
+  ];
+
+  const images = [img1, img2, img3, img4, img5, img6, img7];
+
   return (
     <section id="popular">
       <div className="container max-w-[1300px] mx-auto px-4 mb-[100px]">
@@ -29,45 +41,26 @@ const Popular = () => {
           modules={[Navigation]}
           spaceBetween={20}
           breakpoints={{
-            320: {
-              slidesPerView: 1,
-            },
-            640: {
-              slidesPerView: 2,
-            },
-            1024: {
-              slidesPerView: 3,
-            },
-            1280: {
-              slidesPerView: 4,
-            },
+            320: { slidesPerView: 1 },
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+            1280: { slidesPerView: 4 },
           }}
         >
-          {[img1, img2, img3, img4, img5, img6, img7].map((img, index) => {
-            const titles = [
-              // { t('popular.city1'); },
-              'Dubay',
-              'Turkiya',
-              'Tailand',
-              'Malayziya',
-              'Singapur',
-              'Indoneziya',
-            ];
-            return (
-              <SwiperSlide key={index}>
-                <div className="flex flex-col items-center">
-                  <img
-                    className="w-full h-[220px] object-cover rounded-[10px] max-w-[250px] mx-auto"
-                    src={img}
-                    alt={titles[index]}
-                  />
-                  <h4 className="mt-2 font-semibold text-[18px] md:text-[20px] text-center">
-                    {titles[index]}
-                  </h4>
-                </div>
-              </SwiperSlide>
-            );
-          })}
+          {images.map((img, index) => (
+            <SwiperSlide key={index}>
+              <div className="flex flex-col items-center">
+                <img
+                  className="w-full h-[220px] object-cover rounded-[10px] max-w-[250px] mx-auto"
+                  src={img}
+                  alt={titles[index]}
+                />
+                <h4 className="mt-2 font-semibold text-[18px] md:text-[20px] text-center">
+                  {titles[index]}
+                </h4>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </section>

@@ -42,7 +42,7 @@ const Country = () => {
                 />
               </div>
               <div className="relative flex items-center justify-between px-4 py-3">
-                <h3 className="text-[20px] font-semibold uppercase">{t(country.name)}</h3>
+                <h3 className="text-[20px] font-bold uppercase">{t(country.name)}</h3>
                 <img
                   src={country.logo}
                   alt={`${country.name} logo`}
