@@ -28,12 +28,11 @@ const Service = () => {
                 `}
                 data-aos="zoom-in"
               >
-                {item.title}
+                {t(item.title)}
               </button>
             </div>
           ))}
         </div>
-
 
         <div className="w-full mt-6">
           {service.map((item) => (
@@ -42,9 +41,9 @@ const Service = () => {
                 <div className='text-block'>
                   <div className='flex items-center gap-4 my-2'>
                     <div className='bg-[#f00] w-[5px] h-[50px]'></div>
-                    <h3 className='font-bold text-[18px]' data-aos="fade-right">{item.title}</h3>
+                    <h3 className='font-bold text-[18px]' data-aos="fade-right">{t(item.title)}</h3>
                   </div>
-                  <p className='text-[18px] mb-[25px]'>{item.description}</p>
+                  <p className='text-[18px] mb-[25px]'>{t(item.description)}</p>
                 </div>
               </article>
             )

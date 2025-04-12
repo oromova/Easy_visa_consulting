@@ -11,7 +11,14 @@
     "title1": "is our concern"
   },
   "popular": {
-    "title": "Populars"
+    "title": "Populars",
+    "city1": "Sharm El-Sheikh",
+    "city2": "Dubai",
+    "city3": "Turkey",
+    "city4": "Thailand",
+    "city5": "Malaysia",
+    "city6": "Singapore",
+    "city7": "Indonesia"
   },
   "about": {
     "title": "About",
@@ -20,8 +27,7 @@
     "subtitle3": " We are committed to making the visa application process simple and understandable for clients from Uzbekistan, enabling them to easily and quickly access the best travel destinations in the world."
   },
   "city": {
-    "title": "Countries",
-    "city1": ""
+    "title": "Countries"
   },
   "travel": "Excursion",
   "comment": "Client Reviews",
@@ -56,5 +62,35 @@
   "footer": {
     "title": "© EASY VISA CONSULTING - ALL RIGHTS RESERVED",
     "subtitle": "Developed by Limsa"
+  },
+  "numbers": {
+    "subtitle1": "Issued Visas",
+    "subtitle2": "Successful Trips",
+    "subtitle3": "Satisfied Clients"
+  },
+  "services": {
+    "title": "Visa Consulting",
+    "description": "EASY VISA CONSULTING specialists provide detailed consultations for visa applications to countries such as the Schengen area, Canada, the USA, the United Kingdom, Japan, and Korea. We explain all the subtleties of submitting documents and assist with preparation for the process.",
+    "title1": "Tourist Visas",
+    "description1": "We assist in obtaining tourist visas for comfortable travel to popular destinations in Europe, North America, and Asia. Our specialists provide full support at every step.",
+    "title2": "Business Visas",
+    "description2": "For business trips, EASY VISA CONSULTING offers comprehensive solutions for obtaining visas to the world's leading countries. We ensure fast and professional document submission.",
+    "title3": "Document Preparation",
+    "description3": "We carefully review all your documents and ensure they meet the requirements of visa centers. We also help gather the necessary certificates and information for successful visa approval.",
+    "title4": "Travel Packages",
+    "description4": "We offer the best travel packages that include trip planning, hotel bookings, and excursions to make your vacation as comfortable as possible.",
+    "title5": "Insurance",
+    "description5": "We arrange travel insurance that protects you and your loved ones during your trip, ensuring safety and peace of mind in any situation."
+  },
+  "countries": {
+    "city1": "Schengen",
+    "city2": "Canada",
+    "city3": "USA",
+    "city4": "United Kingdom",
+    "city5": "Australia",
+    "city6": "New Zealand",
+    "city7": "Japan",
+    "city8": "Korea",
+    "city9": "Latin America"
   }
 }

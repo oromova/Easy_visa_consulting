@@ -12,3 +12,11 @@ a {
 html {
   scroll-behavior: smooth;
 }
+
+.thumbnail {
+  cursor: pointer;
+  object-fit: cover;
+  opacity: 40%;
+  transition: opacity .3s ease, border .3s ease;
+  
+}

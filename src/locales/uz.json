@@ -11,7 +11,14 @@
     "title1": "bizning mas'uliyatimizdir"
   },
   "popular": {
-    "title": "Ommabop"
+    "title": "Ommabop",
+    "city1": "Sharm El-Sheyx",
+    "city2": "Dubay",
+    "city3": "Turkiya",
+    "city4": "Tailand",
+    "city5": "Malayziya",
+    "city6": "Singapur",
+    "city7": "Indoneziya"
   },
   "about": {
     "title": "Biz haqimizda",
@@ -20,8 +27,7 @@
     "subtitle3": "Biz O‘zbekistonlik mijozlar uchun visa olish jarayonini oddiy va tushunarli qilishga qaratilganmiz, shunda ularga dunyoning eng yaxshi sayohat manzillariga oson va tez kirish imkonini beramiz."
   },
   "city": {
-    "title": "Mamlakatlar",
-    "city1": ""
+    "title": "Mamlakatlar"
   },
   "travel": "Sayohat",
   "comment": "Mijozlar Sharhlari",
@@ -56,5 +62,35 @@
   "footer": {
     "title": "© EASY VISA CONSULTING - HAMMA HUQUQLARI HIMOYA QILINGAN",
     "subtitle": "Limsa tomonidan ishlab chiqilgan"
+  },
+  "numbers": {
+    "subtitle1": "Berilgan vizalar",
+    "subtitle2": "Muvaffaqiyatli sayohatlar",
+    "subtitle3": "Qoniqishdagi mijozlar"
+  },
+  "services": {
+    "title": "Viza Maslahati",
+    "description": "EASY VISA CONSULTING mutaxassislari Shengen, Kanada, AQSH, Buyuk Britaniya, Yaponiya va Koreya kabi davlatlar uchun viza arizalari bo'yicha batafsil maslahatlar taqdim etadi. Biz hujjatlarni taqdim etishning barcha nozik tomonlarini tushuntiramiz va jarayonga tayyorgarlik ko'rishda yordam beramiz.",
+    "title1": "Turistik Vizalar",
+    "description1": "Biz Evropaga, Shimoliy Amerikaga va Osiyoga mashhur davlatlarga qulay sayohat uchun turistik vizalarni olishda yordam beramiz. Bizning mutaxassislarimiz har bir bosqichda to'liq yordam ko'rsatadi.",
+    "title2": "Biznes Vizalar",
+    "description2": "Biznes safarlari uchun EASY VISA CONSULTING dunyoning yetakchi davlatlariga viza olish bo'yicha kompleks echimlar taqdim etadi. Biz hujjatlarni tez va professional tarzda taqdim etishni ta'minlaymiz.",
+    "title3": "Hujjatlarni Tayyorlash",
+    "description3": "Biz barcha hujjatlaringizni diqqat bilan tekshiramiz, ularning viza markazlari talablariga mos kelishini ta'minlaymiz. Shuningdek, vizani muvaffaqiyatli olish uchun zarur bo'lgan sertifikatlar va ma'lumotlarni yig'ishga yordam beramiz.",
+    "title4": "Sayohat paketlari",
+    "description4": "Biz sizning dam olishingizni maksimal darajada qulay qilish uchun sayohatlarni tashkil etish, mehmonxonalarni bron qilish va ekskursiyalarni o'z ichiga olgan eng maqbul sayohat paketlarini tanlashni taklif etamiz.",
+    "title5": "Sug'urta",
+    "description5": "Biz sizni va yaqinlaringizni sayohat davomida himoya qiladigan, har qanday vaziyatda xavfsizlik va ishonchni ta'minlaydigan sayohat sug'urtasini tashkil etamiz."
+  },
+  "countries": {
+    "city1": "Shengen",
+    "city2": "Kanada",
+    "city3": "Aqsh",
+    "city4": "Buyuk Britaniya",
+    "city5": "Avstraliya",
+    "city6": "Yangi Zelandiya",
+    "city7": "Yaponiya",
+    "city8": "Koreya",
+    "city9": "Lotin Amerikasi"
   }
 }

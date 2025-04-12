@@ -10,11 +10,11 @@ const Header = () => {
   };
 
   return (
-    <header>
+    <header className="fixed top-0 left-0 w-full z-50">
       <div className='bg-white shadow-md' >
         <nav className='relative'>
           <img className='max-w-[800px] h-full opacity-25 absolute left-1/2 top-1/2 transform translate-x-1/2 -translate-y-1/2' src={navBg} alt="navbar-bg" />
-          <div className='w-[1300px] mx-auto h-[80px] px-[15px] mt-[20px] py-2 flex justify-between'>
+          <div className='w-[1300px] mx-auto h-[80px] px-[15px] py-2 flex justify-between'>
             <a className='w-[100px] h-[60px]' href="/">
               <img src={logo} alt="logotip" />
             </a>

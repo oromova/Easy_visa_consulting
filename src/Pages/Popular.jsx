@@ -15,7 +15,7 @@ import { useTranslation } from 'react-i18next';
 
 const Popular = () => {
   const { t } = useTranslation();
-  
+
   return (
     <section id="popular">
       <div className="container max-w-[1300px] mx-auto px-4 mb-[100px]">
@@ -45,7 +45,7 @@ const Popular = () => {
         >
           {[img1, img2, img3, img4, img5, img6, img7].map((img, index) => {
             const titles = [
-              'Sharm El-Sheyx',
+              // { t('popular.city1'); },
               'Dubay',
               'Turkiya',
               'Tailand',

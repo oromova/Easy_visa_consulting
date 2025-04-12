@@ -21,55 +21,55 @@ import logo9 from '../assets/C-logo9.png';
 export const countries = [
   {
     id: 1,
-    name: "Shengen",
+    name: "countries.city1",
     img: img1,
     logo: logo1
   },
   {
     id: 2,
-    name: "Kanada",
+    name: "countries.city2",
     img: img2,
     logo: logo2
   },
   {
     id: 3,
-    name: "Aqsh",
+    name: "countries.city3",
     img: img3,
     logo: logo3
   },
   {
     id: 4,
-    name: "Buyuk Britaniya",
+    name: "countries.city4",
     img: img4,
     logo: logo4
   },
   {
     id: 5,
-    name: "Avstraliya",
+    name: "countries.city5",
     img: img5,
     logo: logo5
   },
   {
     id: 6,
-    name: "Yangi Zelandiya",
+    name: "countries.city6",
     img: img6,
     logo: logo6
   },
   {
     id: 7,
-    name: "Yaponiya",
+    name: "countries.city7",
     img: img7,
     logo: logo7
   },
   {
     id: 8,
-    name: "Koreya",
+    name: "countries.city8",
     img: img8,
     logo: logo8
   },
   {
     id: 9,
-    name: "Lotin Amerikasi",
+    name: "countries.city9",
     img: img9,
     logo: logo9
   }

@@ -2,13 +2,13 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import CountUp from 'react-countup';
-import turizm from '../assets/turizm2.svg'
+import turizm from '../assets/turizm2.svg';
 import logo1 from '../assets/turizm1.webp';
 import logo3 from '../assets/turizm3.svg';
 import logo4 from '../assets/turizm4.svg';
-import { numbers } from '../mock/numbers';
 import img from '../assets/numbers-bg.png';
 import { useTranslation } from 'react-i18next';
+import { numbers } from '../mock/numbers';
 
 const Turizm = () => {
   const { t } = useTranslation();
@@ -45,7 +45,7 @@ const Turizm = () => {
           </div>
 
           <div className="text-center w-[135px]" data-aos="zoom-in" data-aos-delay="100">
-            <img className="md:max-w-[135px] md:max-h-[135px] max-w-[55px] max-h-[55px] mx-auto" 
+            <img className="md:max-w-[135px] md:max-h-[135px] max-w-[55px] max-h-[55px] mx-auto"
               src={turizm} alt="Ishinchlilik" />
             <h3 className="text-white text-[14px] md:text-[15px] font-bold mt-[20px] leading-tight">{t('excursion.data2')}</h3>
           </div>
@@ -72,22 +72,30 @@ const Turizm = () => {
           </div>
           <div className='w-full flex justify-center  md:justify-evenly gap-[20px] mt-[10px] px-[20px]'>
             {
-              numbers.map((number) => (
-                <div className='flex flex-col items-center aos-init aos-animate' 
+              numbers.map((number, index) => (
+                <div key={index} className='flex flex-col items-center aos-init aos-animate'
                   data-aos="zoom-in">
                   <h4 className='xl:text-[100px] md:[80px] lg:text-[60px] text-[40px] text-white font-bold'>
-                    <CountUp start={1000} end={number.number} duration={3} enableScrollSpy={true} separator=""
-                    className='w-full flex-wrap justify-center' />
+                    <CountUp
+                      start={1000}
+                      end={number.number}
+                      duration={3}
+                      enableScrollSpy
+                    >
+                      {({ countUpRef }) => (
+                        <span ref={countUpRef} className='w-full flex-wrap justify-center'></span>
+                      )}
+                    </CountUp>
                   </h4>
                   <p className='md:text-[16px] text-[12px] text-white text-center font-bold uppercase my-[20px]'>
-                    {number.subtitle}
+                    {t(number.subtitleKey)}
                   </p>
                 </div>
               ))
             }
           </div>
         </div>
-        
+
         <span className='max-w-[1000px] h-[3px] mx-auto bg-[#f00] block mt-[50px]'></span>
       </div>
     </section>
