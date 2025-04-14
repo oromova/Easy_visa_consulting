@@ -4,9 +4,34 @@ import img2 from '../assets/contact2.webp';
 import img3 from '../assets/contact3.svg';
 import img4 from '../assets/contact4.svg';
 import { useTranslation } from 'react-i18next';
+import axios from 'axios';
 
 const Footer = () => {
   const { t } = useTranslation();
+
+  const sendMessage = (event) => {
+    event.preventDefault();
+    const token = "7960732850:AAFMzjVBkNZ3_p0uVd0fUt7rMn0_UJ4Kk94";
+    const chat_id = 6135129095;
+    const url = `https://api.telegram.org/bot${token}/sendMessage`;
+    const name = document.getElementById("name").value;
+    const surname = document.getElementById("surname").value;
+    const tel = document.getElementById("tel").value;
+    const messageContent = `Ismi: ${name}\nFamiliyasi: ${surname} \n Tel: ${tel}`;
+
+    axios({
+      url: url,
+      method: "POST",
+      data: {
+        "chat_id": chat_id,
+        "text": messageContent,
+      }
+    }).then((res) => {
+      alert(t('alert'));
+    }).catch((error) => {
+      console.log("yuborishda xatolik", error);
+    });
+  };
 
   return (
     <footer className='bg-black text-white' id='contact'>
@@ -76,12 +101,43 @@ const Footer = () => {
           {/* 3. Form */}
           <div className='w-full lg:w-[30%]' data-aos="fade-left">
             <h3 className='text-[30px] md:text-[40px] text-center lg:text-left font-bold'>{t('submit.title')}</h3>
-            <form className='flex flex-col gap-4 mt-6'>
-              <input className='py-3 bg-white pl-4 text-sm outline-none text-[#222221]' placeholder={t("submit.name")} type="text" required data-aos='fade-left' />
-              <input className='py-3 bg-white pl-4 text-sm outline-none text-[#222221]' placeholder={t("submit.surname")} type="text" required data-aos='fade-left' />
-              <input className='py-3 bg-white pl-4 text-sm outline-none text-[#222221]' placeholder={t("submit.phone")} type="tel" required data-aos='fade-left' />
-              <textarea className='h-[120px] py-3 pl-4 bg-white text-sm outline-none text-[#222221]' placeholder={t("submit.comment")} data-aos='fade-left'></textarea>
-              <button type='submit' className='bg-[#D5192F] rounded-lg py-3 text-white font-bold transition-all hover:bg-white hover:text-[#D5192F]'>{t("submit.submit")}</button>
+            <form className='flex flex-col gap-4 mt-6'
+              id='myForm'
+              onSubmit={sendMessage}
+            >
+              <input
+                className='py-3 bg-white pl-4 text-sm outline-none text-[#222221]'
+                id='name'
+                placeholder={t("submit.name")}
+                type="text"
+                required
+                data-aos='fade-left'
+              />
+              <input
+                className='py-3 bg-white pl-4 text-sm outline-none text-[#222221]'
+                id='surname'
+                placeholder={t("submit.surname")}
+                type="text"
+                required
+                data-aos='fade-left'
+              />
+              <input
+                id='tel'
+                className='py-3 bg-white pl-4 text-sm outline-none text-[#222221]'
+                placeholder={t("submit.phone")}
+                type="tel"
+                required
+                data-aos='fade-left'
+              />
+              <textarea
+                className='h-[120px] py-3 pl-4 bg-white text-sm outline-none text-[#222221]'
+                placeholder={t("submit.comment")}
+                data-aos='fade-left'></textarea>
+              <button
+                type='submit'
+                className='bg-[#D5192F] rounded-lg py-3 text-white font-bold transition-all hover:bg-white hover:text-[#D5192F]'>
+                {t("submit.submit")}
+              </button>
             </form>
           </div>
 
@@ -102,7 +158,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
     </footer>
   );
 };

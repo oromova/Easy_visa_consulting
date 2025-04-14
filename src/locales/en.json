@@ -92,5 +92,6 @@
     "city7": "Japan",
     "city8": "Korea",
     "city9": "Latin America"
-  }
+  },
+  "alert": "Successfully sent"
 }
