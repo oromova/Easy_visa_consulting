@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import img from '../assets/contact1.webp';
 import img2 from '../assets/contact2.webp';
 import img3 from '../assets/contact3.svg';
@@ -8,8 +8,10 @@ import axios from 'axios';
 
 const Footer = () => {
   const { t } = useTranslation();
+  const [loading, setLoading] = useState(false);
 
   const sendMessage = (event) => {
+    setLoading(true);
     event.preventDefault();
     const token = "7960732850:AAFMzjVBkNZ3_p0uVd0fUt7rMn0_UJ4Kk94";
     const chat_id = 6135129095;
@@ -17,7 +19,7 @@ const Footer = () => {
     const name = document.getElementById("name").value;
     const surname = document.getElementById("surname").value;
     const tel = document.getElementById("tel").value;
-    const messageContent = `Ismi: ${name}\nFamiliyasi: ${surname} \n Tel: ${tel}`;
+    const messageContent = `Ismi: ${name},\nFamiliyasi: ${surname},\nTel: ${tel}`;
 
     axios({
       url: url,
@@ -27,9 +29,12 @@ const Footer = () => {
         "text": messageContent,
       }
     }).then((res) => {
+      document.getElementById("myForm").reset();
       alert(t('alert'));
     }).catch((error) => {
       console.log("yuborishda xatolik", error);
+    }).finally(() => {
+      setLoading(false);
     });
   };
 
@@ -135,8 +140,9 @@ const Footer = () => {
                 data-aos='fade-left'></textarea>
               <button
                 type='submit'
+                loading={loading}
                 className='bg-[#D5192F] rounded-lg py-3 text-white font-bold transition-all hover:bg-white hover:text-[#D5192F]'>
-                {t("submit.submit")}
+                {loading ? t("btn") : t("submit.submit")}
               </button>
             </form>
           </div>

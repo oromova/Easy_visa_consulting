@@ -49,7 +49,7 @@
     "subtitle": "For contact:",
     "subtitle2": "Social media",
     "telegram": "Telegram",
-    "location": "г.Ташкент, Мустакиллик 59."
+    "location": "Tashkent, Mustaqillik Street 59"
   },
   "submit": {
     "title": "Submit a request",
@@ -93,5 +93,6 @@
     "city8": "Korea",
     "city9": "Latin America"
   },
-  "alert": "Successfully sent"
+  "alert": "Successfully sent",
+  "btn": "Sending..."
 }
