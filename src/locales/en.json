@@ -6,10 +6,14 @@
     "work": "Our Works",
     "contact": "Contact"
   },
-  "home": {
-    "title": "Your comfort in travel -",
-    "title1": "is our concern"
-  },
+ "home": {
+  "title": "Comfort in your journey –",
+  "title1": "is our responsibility",
+  "title2": "Reliable visa processing",
+  "title3": "for all countries",
+  "title4": "The best travel routes",
+  "title5": "at affordable prices"
+},
   "popular": {
     "title": "Populars",
     "city1": "Sharm El-Sheikh",

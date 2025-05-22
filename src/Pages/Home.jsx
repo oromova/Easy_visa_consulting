@@ -36,7 +36,7 @@ const Home = () => {
             <img className="w-full h-full object-cover" src={slide2} alt="slide2" />
             <div className="absolute inset-0 flex items-center justify-center px-4 text-center">
               <h1 className="bg-black px-[30px] sm:px-[40px] md:px-[50px] py-[15px] sm:py-[18px] md:py-[20px] rounded-[20px] text-white text-xl sm:text-2xl md:text-3xl lg:text-[40px] xl:text-[48px] font-bold uppercase leading-snug">
-                Barcha mamlakatlar uchun <br /> ishonchli viza tayyorlash
+                {t('home.title2')} <br /> {t('home.title3')}
               </h1>
             </div>
           </div>
@@ -47,7 +47,7 @@ const Home = () => {
             <img className="w-full h-full object-cover" src={slide3} alt="slide3" />
             <div className="absolute inset-0 flex items-center justify-center px-4 text-center">
               <h1 className="bg-black px-[30px] sm:px-[40px] md:px-[50px] py-[15px] sm:py-[18px] md:py-[20px] rounded-[20px] text-white text-xl sm:text-2xl md:text-3xl lg:text-[40px] xl:text-[48px] font-bold uppercase leading-snug">
-                Arzon narxlardagi eng yaxshi <br /> sayohat marshrutlari
+                {t('home.title4')} <br /> {t('home.title5')}
               </h1>
             </div>
           </div>

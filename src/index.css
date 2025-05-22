@@ -18,5 +18,4 @@ html {
   object-fit: cover;
   opacity: 40%;
   transition: opacity .3s ease, border .3s ease;
-  
 }
