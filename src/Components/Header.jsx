@@ -17,7 +17,7 @@ const Header = () => {
             alt="navbar-bg"
             className='w-[800px] absolute right-50 top-0 h-full opacity-25 z-0'
           />
-          <div className='w-[1300px] mx-auto h-[80px] px-[15px] mt-[10px] py-2 flex justify-between relative z-10'>
+          <div className='w-[1300px] mx-auto h-[80px] px-[15px] py-2 flex justify-between relative z-10'>
             <a className='w-[100px] h-[60px]' href="/">
               <img src={logo} alt="logotip" />
             </a>
